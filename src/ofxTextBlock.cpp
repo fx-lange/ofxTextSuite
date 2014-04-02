@@ -75,7 +75,7 @@ void ofxTextBlock::drawLeft(float x, float y){
                 drawX = x + currX;
                 drawY = y + (defaultFont.getLineHeight() * (l + 1));
 
-                ofSetColor(words[currentWordID].color.r, words[currentWordID].color.g, words[currentWordID].color.b);
+                ofSetColor(words[currentWordID].color.r, words[currentWordID].color.g, words[currentWordID].color.b, words[currentWordID].color.a);
                 glPushMatrix();
                 //glTranslatef(drawX, drawY, 0.0f);
                 glScalef(scale, scale, scale);
@@ -122,7 +122,7 @@ void ofxTextBlock::drawCenter(float x, float y){
                 drawX = -(lineWidth / 2) + currX;
                 drawY = defaultFont.getLineHeight() * (l + 1);
 
-                ofSetColor(words[currentWordID].color.r, words[currentWordID].color.g, words[currentWordID].color.b);
+                ofSetColor(words[currentWordID].color.r, words[currentWordID].color.g, words[currentWordID].color.b, words[currentWordID].color.a);
 
                 glPushMatrix();
 
